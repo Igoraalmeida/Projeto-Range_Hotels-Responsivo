@@ -24,7 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
 .icon-clock:before {
   content: "\e94e";
 }

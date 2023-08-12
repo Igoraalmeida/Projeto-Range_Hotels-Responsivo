@@ -3,7 +3,7 @@
 html{
     font-family: sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     font-family: "Oxygen", arial;
 }
 .clearfix::after{
@@ -55,6 +55,32 @@ h1,h2,h3,h4,h5,h6{
     padding: 1em;
     line-height: 1.4;
 }
+.icons{
+    height: 30px;
+    margin-right: 5px;
+}
+.line{
+    padding-top: 10px;
+    border-top: 2px solid #000000a4;
+    margin: 6px;
+}
+.information-icons a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000de;
+    font-style: italic; 
+}
+
+.information-icons, .information-icons li{
+    margin-top: 20px;
+}
+.information-icons p{
+    display: inline-block;
+}
+.information-icons ul{    
+    list-style: none;
+    margin-bottom: 40px;
+}
 .icon-play{
     height: 5em;
     margin: 1em;
@@ -72,6 +98,10 @@ h1,h2,h3,h4,h5,h6{
     padding: .9em 2em;
     border-radius: 6px;
     transition: all .3s;
+}
+.button-product{
+    margin: -40px 10px 0 0;
+    float: right;
 }
 .button:hover{
     background-color: #1fa7a7;
@@ -94,8 +124,26 @@ h1,h2,h3,h4,h5,h6{
     font-size: 3em;
     color: #612674;
 }
+/* .col1de2{
+    width: 46%;
+    margin: 2%;
+    float: left;
+} */
 .main-content{
     padding: 1.2em;
+}
+.main-product p{
+    margin: 6px;
+}
+.product-images, .main-image {
+    width: 100%;
+    height: 20em;
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+}
+.product-images{
+    border: 3px solid grey;
+    border-radius: 3px;
 }
 .main-content-article{
     padding-bottom: 1.5em;
@@ -178,8 +226,11 @@ h1,h2,h3,h4,h5,h6{
         float: left;
     }
     .main-content-article .button{
-        float: right;
+        
         margin-right: 5%;
+    }
+    .main-content{
+        border-top: 4px solid #612674;
     }
 }
 
@@ -214,20 +265,22 @@ h1,h2,h3,h4,h5,h6{
     .col-1-2{
         width: 48%;
         margin: 1%;
-        float: left;
+        float: left;      
+       
     }
     .main-content-article .button{
         float: none;
         
     }
+
     .product-images{
-        width: 80%;
+        width: 90%;
         height: 20em;
         border-radius: 5px;
         border: 3px solid grey;
     }
     .main-content p{
-        width: 80%;
+        width: 90%;
 
     }
 
