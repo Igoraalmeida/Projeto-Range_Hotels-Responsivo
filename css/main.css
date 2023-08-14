@@ -69,8 +69,8 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 18px;
     color: #000000de;
     font-style: italic; 
+    padding: 0 0 0 1%;
 }
-
 .information-icons, .information-icons li{
     margin-top: 20px;
 }
@@ -99,10 +99,6 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 6px;
     transition: all .3s;
 }
-.button-product{
-    margin: -40px 10px 0 0;
-    float: right;
-}
 .button:hover{
     background-color: #1fa7a7;
 }
@@ -124,6 +120,24 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 3em;
     color: #612674;
 }
+.col-1de4{
+    width: 48%;
+    margin: 1%;
+    float: left;  
+}
+.endereco{
+    margin-left: 5px;
+}
+.product-title{
+    margin-left: 5px;
+}
+.product-subtitle{
+    padding: 0 12% 100px 5% ;
+}
+.button-product{
+    margin: -60px 2% 0 0;
+    float: right;
+}
 /* .col1de2{
     width: 46%;
     margin: 2%;
@@ -131,9 +145,6 @@ h1,h2,h3,h4,h5,h6,p{
 } */
 .main-content{
     padding: 1.2em;
-}
-.main-product p{
-    margin: 6px;
 }
 .product-images, .main-image {
     width: 100%;
@@ -179,9 +190,12 @@ h1,h2,h3,h4,h5,h6,p{
     padding: .6em;
     line-height: 1.5;
 }
+.information-icons a{
+    margin: 0 0 0 5px; 
+}
 
 
-
+/* Tablet Version */
 @media screen and (min-width: 48.75em){
     .top-header-logo{
         float: left;
@@ -226,16 +240,34 @@ h1,h2,h3,h4,h5,h6,p{
         float: left;
     }
     .main-content-article .button{
-        
         margin-right: 5%;
     }
-    .main-content{
-        border-top: 4px solid #612674;
+    .main-image{
+        width: 80%;
+        margin: 0 10% 0 10%;
+        height: 25em;
+        border: 3px solid grey;
+        border-radius: 3px;
+    }
+    .main-product-article p{
+        margin: 0 0 0 80px;
+    }
+    .middle-content-product{
+        padding-left: 15%;
+    }
+    .information-icons a{
+        margin: 0 0 0 80px; 
+    }
+    .button-product{
+        margin: -40px 10% 0 0;
+    }
+    .product-title{
+        margin: 10px 10% 10px 10%;
     }
 }
 
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 60.5em) {
     .top-content{
         background: #612674 url(/images/bg_topo_1198x670.jpg);
         height: 15em;
@@ -246,8 +278,15 @@ h1,h2,h3,h4,h5,h6,p{
         margin: 0;
         margin-top: -3em;
     }
+    .information-icons a{
+        margin: 0 0 0 10%; 
+    }
+    .main-product p{
+        margin: 0 0 0 9%; 
+    }
 }
 
+/* Fullscreen Version */
 @media screen and (min-width: 72em) {
     .top-content{
         background-image: url(/images/bg_topo_1600x1374.jpg);
@@ -256,6 +295,9 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .top-content-title{
         margin-top: 2.5em;
+    }
+    .top-header{
+        border-bottom: 5px solid #612674;        
     }
     .col-1-4{
         width: 23%;
@@ -268,11 +310,18 @@ h1,h2,h3,h4,h5,h6,p{
         float: left;      
        
     }
-    .main-content-article .button{
-        float: none;
-        
+    .col-1de4{
+        width: 48%;
+        margin: 1%;
     }
-
+    .main-content-article .button{
+        float: none;  
+    }
+    .main-image{
+        width: 70%;
+        height: 30em;
+        margin: 0 0 0 15%;
+    }
     .product-images{
         width: 90%;
         height: 20em;
@@ -282,6 +331,41 @@ h1,h2,h3,h4,h5,h6,p{
     .main-content p{
         width: 90%;
 
+    }
+    .middle-content-title{
+        margin: 20px 35px 0 0%;
+    }
+    .middle-content-subtitle{
+        margin:  15px 0 0 0 ;
+    }
+    .information-icons a{
+        margin: 0 0 0 15%; 
+    }
+    .button-product{
+        margin: -40px 50px 0 0;
+        float: right;
+    }
+    .product-title{
+        margin: 10px 15% 10px 15%;
+    }
+    .main-product p:nth-child(3){
+        margin: 0 0 0 0%;
+    }
+    .product-subtitle{
+        padding: 0 20% 80px 10%;
+    }
+    .button-product{
+        margin: -40px 15% 0 0;
+        float: right;
+    }
+    .endereco{
+        padding-left: 15%;
+    }
+    .middle-content-product{
+        padding-left: 20%;
+    }
+    .fix{
+        margin-left: 12%;
     }
 
 }
