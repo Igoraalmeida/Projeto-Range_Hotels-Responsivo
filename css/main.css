@@ -6,6 +6,9 @@ html{
 h1,h2,h3,h4,h5,h6,p{
     font-family: "Oxygen", arial;
 }
+.body-content{
+    margin: 10px 10px;
+}
 .clearfix::after{
     content: ' ';
     display: block;
@@ -55,6 +58,42 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 1em;
     line-height: 1.4;
 }
+.banner-hotel{
+    padding: 2em;
+    background-color: orange;
+    box-shadow:  0px 0 5px 0 rgb(202, 133, 4);
+}
+.banner-title, .banner-subtitle{
+    text-align: center;
+    
+}
+.icon-banner {
+    margin: -10px 0 30px 0;
+    padding-left: 30%;
+}
+form{
+    padding: 0;
+    margin: 0;
+    
+}
+form div{
+    flex-direction: column;
+    display: flex;
+    margin: 20px 0 0 0 ;
+    border-radius: 5px ;
+}
+form input, form textarea{
+    padding: 10px;
+    border-radius: 5px ;
+    border: 3px groove;
+}
+form input:focus, form textarea:focus{
+    background: orange;
+}
+.map{
+    
+    
+ }
 .icons{
     height: 30px;
     margin-right: 5px;
@@ -74,7 +113,7 @@ h1,h2,h3,h4,h5,h6,p{
 .information-icons, .information-icons li{
     margin-top: 20px;
 }
-.information-icons p{
+.information-icons p, .icon-banner li{
     display: inline-block;
 }
 .information-icons ul{    
@@ -101,6 +140,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .button:hover{
     background-color: #1fa7a7;
+}
+.reserva-button{
+    float: right;
+    margin: 0 0 0 0;
 }
 .middle-content{
     padding: 1.5em;
@@ -138,11 +181,6 @@ h1,h2,h3,h4,h5,h6,p{
     margin: -60px 2% 0 0;
     float: right;
 }
-/* .col1de2{
-    width: 46%;
-    margin: 2%;
-    float: left;
-} */
 .main-content{
     padding: 1.2em;
 }
@@ -240,10 +278,10 @@ h1,h2,h3,h4,h5,h6,p{
         float: left;
     }
     .main-content-article .button{
-        margin-right: 5%;
+        /* margin-right: 5%; */
     }
     .main-image{
-        width: 80%;
+        width: 50%;
         margin: 0 10% 0 10%;
         height: 25em;
         border: 3px solid grey;
@@ -263,6 +301,9 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .product-title{
         margin: 10px 10% 10px 10%;
+    }
+    .product-images{
+        width: 70%;
     }
 }
 
@@ -297,7 +338,7 @@ h1,h2,h3,h4,h5,h6,p{
         margin-top: 2.5em;
     }
     .top-header{
-        border-bottom: 5px solid #612674;        
+        border-bottom: 3px solid #612674;        
     }
     .col-1-4{
         width: 23%;
@@ -315,7 +356,7 @@ h1,h2,h3,h4,h5,h6,p{
         margin: 1%;
     }
     .main-content-article .button{
-        float: none;  
+        /* float: none;   */
     }
     .main-image{
         width: 70%;
@@ -364,8 +405,28 @@ h1,h2,h3,h4,h5,h6,p{
     .middle-content-product{
         padding-left: 20%;
     }
+    .reserva-button{
+        float: right;
+        margin: 0 9% 0 0;
+    }
     .fix{
         margin-left: 12%;
     }
-
+    .title-fix{
+        padding-top: 9px;
+        
+    }
+    .icon-banner {
+        margin: -10px 0 30px 0;
+        padding-left: 37%;
+    }
+    form div{
+        width: 40%; 
+    }
+    .map{
+        display: inline;
+         float: right; 
+         margin: -32% 1% 0% 0;
+        border: 3px outset rgba(54, 53, 53, 0.74);
+     }
 }
