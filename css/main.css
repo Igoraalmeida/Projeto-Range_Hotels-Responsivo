@@ -17,7 +17,6 @@ h1,h2,h3,h4,h5,h6,p{
 .top-nav{
     background: #612674;
     color: white;
-    
 }
 .top-nav ul{
     text-align: center;
@@ -28,13 +27,16 @@ h1,h2,h3,h4,h5,h6,p{
 
 .top-nav a{
     text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
     color: white;
-    padding: 1em;
+    padding: 20px 50px;
     display: block;
-    transition: background .6s;
+    transition: all .4s;
 }
 .top-nav a:hover{
     background: #7c3792;
+    font-weight: 600;
 }
 .top-header{
     text-align: center;
@@ -43,7 +45,8 @@ h1,h2,h3,h4,h5,h6,p{
     margin: .7em;
 }
 .top-content{
-    padding: 1.5em;
+    /* padding: 1.5em; */
+    padding: 70px 0;
     background: #efefef;
     text-align: center;
 }
@@ -154,7 +157,6 @@ form input:focus, form textarea:focus{
     font-size: 1.2em;
     color: #612674;
     text-transform: uppercase;
-
 }
 .middle-content-subtitle,.main-content-article p {
     line-height: 1.6;
@@ -166,7 +168,7 @@ form input:focus, form textarea:focus{
 .col-1de4{
     width: 48%;
     margin: 1%;
-    float: left;  
+    float: left; 
 }
 .endereco{
     margin-left: 5px;
@@ -331,7 +333,9 @@ form input:focus, form textarea:focus{
 @media screen and (min-width: 72em) {
     .top-content{
         background-image: url(/images/bg_topo_1600x1374.jpg);
-        background-position: left ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 12em 16em 10em;
     }
     .top-content-title{
@@ -365,9 +369,13 @@ form input:focus, form textarea:focus{
     }
     .product-images{
         width: 90%;
-        height: 20em;
+        height: 30em;
         border-radius: 5px;
         border: 3px solid grey;
+    }
+    .main-content{
+        border: 1px solid red;
+
     }
     .main-content p{
         width: 90%;
